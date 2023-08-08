@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Example of Loop</title>
+</head>
+<body>
+	<h1>Going to traverse through elements in collection</h1>
+	<!-- Printing list elements -->
+	<h2 th:text="${names}"></h2>
+
+	<!-- Iterating through list -->
+	<ul>
+		<li th:each="n, status : ${names}">
+			<span th:style="${status.odd} ? 'font-weight:bold' : 'color:red' " th:text=${n}></span><br /> 
+			<!-- status has various functions which can be used to get index, count etc -->
+			<span th:text="'Index of '+${n}+' is '+${status.index}"></span>
+		</li>
+	</ul>
+</body>
+</html>

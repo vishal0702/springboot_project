@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Footer Template</title>
+</head>
+<body>
+	<footer id="fragmentTag" th:fragment="footer1(contactNo, email)">
+		<div class="container">
+			<h2>About "The Engineer's Hub"</h2>
+			<h2>Feel Free to contact for collaboration</h2>
+			<h3 th:text="'Contact Number: '+${contactNo}"></h3>
+			<h3 th:text="'MailId: ' +${email}"></h3>
+		</div>
+	</footer>
+</body>
+</html>

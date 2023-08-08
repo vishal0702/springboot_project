@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Service</title>
+</head>
+<body>
+	<h1 style="text-align: center;">
+		Welcome to <span style="color: red;">"The Engineer's Hub"</span>
+	</h1>
+	
+	<!-- including footer -->
+	<footer id="hostTag" th:replace="footer::footer1(${contactNo},${email})">
+	<!-- <footer th:replace="htmlPageName::FragmentName"> -->
+	</footer>
+</body>
+</html>

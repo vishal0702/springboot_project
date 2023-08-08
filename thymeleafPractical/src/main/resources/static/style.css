@@ -1,0 +1,8 @@
+body{
+	background: teal;
+}
+section{
+	background: yellow;
+	color: red;
+	padding: 30px;
+}
